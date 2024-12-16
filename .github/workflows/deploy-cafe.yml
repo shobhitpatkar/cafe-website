@@ -14,4 +14,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy to S3
         run: |
-          aws s3 sync ./* s3://cafe-website-83506
+          aws s3 sync . s3://cafe-website-83506
